@@ -1,0 +1,67 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "buffer-from": "^1.1.2",
+    "caniuse-lite": "^1.0.30001734",
+    "date-fns": "^4.1.0",
+    "electron-to-chromium": "^1.5.200",
+    "enhanced-resolve": "^5.18.3",
+    "envinfo": "^7.14.0",
+    "eslint-scope": "^5.1.1",
+    "fast-deep-equal": "^3.1.3",
+    "fast-uri": "^3.0.6",
+    "fastest-levenshtein": "^1.0.16",
+    "flat": "^5.0.2",
+    "function-bind": "^1.1.2",
+    "glob-to-regexp": "^0.4.1",
+    "has-flag": "^4.0.0",
+    "import-local": "^3.2.0",
+    "interpret": "^3.1.1",
+    "isobject": "^3.0.1",
+    "mime-types": "^2.1.35",
+    "neo-async": "^2.6.2",
+    "node-releases": "^2.0.19",
+    "p-locate": "^4.1.0",
+    "picocolors": "^1.1.1",
+    "resolve": "^1.22.10",
+    "resolve-cwd": "^3.0.0",
+    "schema-utils": "^4.3.2",
+    "shallow-clone": "^3.0.1",
+    "shebang-regex": "^3.0.0",
+    "supports-color": "^8.1.1",
+    "tapable": "^2.2.2",
+    "webpack-sources": "^3.3.3",
+    "which": "^2.0.2",
+    "wildcard": "^2.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSpanishBread/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSpanishBread/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/TheSpanishBread/odin-restaurant-page#readme"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project: To-do-list</title>
+</head>
+<body>
+    <header>
+        <div class="headerProjectTitle flexRow">
+            <h1>The Odin Project: To-do List </h1>
+            <img src="./images/list-square-2-svgrepo-com.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="mainToDoSettings flexColumn" id="mainToDoSettings">
+        <!--Start of Sidebar-->
+            <div class="mainToDoSettingsTitle flexRow">
+                <img src="./images/gear-svgrepo-com.svg" alt="">
+                <h2>Settings</h2>
+            </div>
+
+            <div class="mainToDoSettingsOptions flexColumn" id="mainToDoSettingsOptions">
+                <button id="newProject"> <img src="./images/add-square-svgrepo-com.svg" alt=""> Add New Project</button>
+                <button id="deleteProject"><img src="./images/minus-square-svgrepo-com.svg" alt=""> Delete a Project</button>
+            </div>
+
+            <div class="mainToDoSettingsSort flexColumn">
+                <label class="flexRow" for="sortBy:"><img src="./images/sort-swap-svgrepo-com.svg" alt="">Sort by:</label>
+                <select name="sortBy" id="sortBy">
+                    <option value="priorityAscending">Priority Ascending</option>
+                    <option value="priorityDecscending">Priority Descending</option>
+                    <option value="dateAscending">Date Ascending</option>
+                    <option value="dateDescending">Date Descending</option>
+                </select>
+            </div>
+        </div>
+        <!--Start of Grid Display-->
+        <div class="mainToDoDisplay flexColumn">
+            <div class="mainToDoDisplayTitle">
+                <h1>Schedules</h1>
+            </div>
+            <div class="mainToDoDisplayGrid" id="mainToDoDisplayGrid">
+                <!-- insert schedule here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by The SpanishBread</p>
+    </footer>
+</body>
+</html>

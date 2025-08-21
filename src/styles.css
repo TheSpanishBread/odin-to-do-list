@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family: 'Norse';
+    src: url("./fonts/Norse-Bold.otf");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+:root{ /*changethis*/
+    --palette-1 : rgb(255, 255, 255);
+    --palette-2 : rgb(224, 224, 224);
+}
+body{
+    font-family: 'Roboto';
+    color:black;
+    background-color: var(--palette-1);
+}
+input{
+    font-family: 'Roboto';
+}
+button, select, option{
+    cursor: pointer;
+}
+img[src$="svg"]{
+    width: 3rem;
+}
+/*gui functions*/
+.overlay{
+    background-color: rgba(0, 0, 0, 0.441);
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+#formContainer{
+    max-height: 90vh;   
+    overflow-y: auto;
+    position: fixed;
+    width: 50vw;
+    z-index: 2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding:2em;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+#formContainer fieldset{
+    padding:1rem;
+    gap:1rem;
+    border:none;
+}
+.inputField{
+    gap:0.5rem;
+}
+#formContainer input,
+#formContainer select,
+#formContainer button,
+#formContainer textarea{
+    padding:0.5rem;
+}
+#formContainer button{
+    background-color: gold;
+    color:white;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    align-self: center;
+    padding:1rem 2rem;
+    transition: 0.4s;
+}
+#formContainer button:hover,
+#formContainer button:active{
+        background-color: rgb(255, 228, 73);
+}
+.scheduleDisplay{
+    background-color: white;
+    padding:0.5rem;
+    align-items: self-start;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+.scheduleDisplay:hover{
+    transform: scale(1.1);
+}
+.scheduleDisplayContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    background-color: aqua;
+    justify-content: start;
+    gap:0.5rem;
+}
+/*HEADER*/
+header{
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.288);
+}
+.headerProjectTitle{
+    font-family: 'Norse';
+    font-size: 2rem;
+    text-align: center;
+    padding:1rem;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.headerProjectTitle img{
+    transform: rotate(15deg);
+}
+.inputField2{
+    gap:2rem;
+    justify-content: space-around;
+}
+#newToDoList{
+    gap:1rem;
+}
+/*MAIN*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding:1rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.mainToDoSettings > *{
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    gap:1rem;
+}
+.mainToDoSettings img[src$="svg"]{
+    width: 2.5rem;
+}
+.mainToDoSettings > * > *{
+    justify-content: center;
+    align-items: center;
+}
+
+.mainToDoSettingsOptions > button{
+    width: 70% ;
+    padding:1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    transition: 0.4s;
+    border:none;
+    font-family: 'Roboto';
+    color:white;
+    border-radius: 0.5rem;
+}
+.mainToDoSettingsOptions > button:hover,
+.mainToDoSettingsOptions > button:active{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+#newProject{
+    background-color: rgb(15, 188, 53);
+}
+#deleteProject{
+    background-color: rgb(255, 60, 60);
+}
+.mainToDoSettingsOptions > button > img[src$="svg"]{
+    width: 1.3rem;
+    display: block;
+}
+
+.mainToDoSettingsSort > label{
+    gap:1rem;
+}
+.mainToDoSettingsSort > label > img{
+    display:block;
+}
+.mainToDoSettingsSort > select{
+    background-color: white;
+    padding:1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+/*FOR GRID Display*/
+
+.mainToDoDisplayTitle{
+    text-align: center;
+}
+.mainToDoDisplayGrid{
+    background-color: var(--palette-2);
+    padding:1rem;
+    border:1px solid white;
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    background-color: rgb(16, 4, 92);
+    color:white;
+    padding:2rem 0rem;
+}
